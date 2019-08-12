@@ -1,7 +1,10 @@
-
 # dw-checkbox
 
-A material input element mde with lit-html.
+A material checkbox element made with lit-html. It's an wrapper of `mwc-checkbox` element.
+
+#Installation
+
+npm install @dw/dw-checkbox
 
 ## Usage
 
@@ -22,3 +25,7 @@ It supports below properties:
 - checked
 
 - indeterminate
+
+## Events
+
+Triggers `checked-change` event on checked status change.

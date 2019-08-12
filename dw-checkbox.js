@@ -11,9 +11,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 import { LitElement, html, css } from 'lit-element';
 import '@material/mwc-checkbox';
 import '@dw/dw-form-field/dw-form-field';
+import '@dw/dw-form/dw-form-element'
+import { DwFormElement } from '@dw/dw-form/dw-form-element';
 
 
-export class DwCheckbox extends LitElement {
+export class DwCheckbox extends DwFormElement(LitElement) {
   static get styles() {
     return [
       css`
@@ -36,7 +38,21 @@ export class DwCheckbox extends LitElement {
 
   static get properties() {
     return {
-
+      
+      /**
+       * A name of this element.
+       */
+      name: {
+        type: String
+      },
+      
+      /**
+       * A value of this element which is uses at the serialization time.
+       */
+      value: {
+        type: String
+      },
+      
       /**
        * A string to be shown for checkbox label
        */
@@ -86,11 +102,15 @@ export class DwCheckbox extends LitElement {
     this.checked = false;
     this.indeterminate = false;
     this.label = "";
+    this.value = "";
   }
 
+  /**
+   * Trigger's `checked-change` event
+   * Sets value of `checked` property
+   */
   _onChange(e) { 
     this.checked = e.target.checked;
-    this.value = e.target.checked;
     this.dispatchEvent(new Event('checked-change', e));
   }
   
