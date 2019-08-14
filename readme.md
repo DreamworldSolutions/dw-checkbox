@@ -14,6 +14,8 @@ npm install --save @dw/dw-checkbox
   import '@dw/dw-checkbox/dw-checkbox';
 ```
 
+## [Demo](https://dreamworldsolutions.github.io/dw-checkbox/demo/index.html)
+
 ## Properties
 
 It supports below properties:
