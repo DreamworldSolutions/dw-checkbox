@@ -88,7 +88,8 @@ export class DwCheckbox extends DwFormElement(LitElement) {
          ?disabled="${this.disabled}"
          ?checked="${this.checked}"
          ?indeterminate="${this.indeterminate}"
-         @change="${this._onChange}">
+         @change="${this._onChange}"
+         @click="${(e) => { e.target.blur(); }}">
         </mwc-checkbox>
 
       </dw-form-field>
