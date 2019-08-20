@@ -1,6 +1,6 @@
 {
-  "name": "@dw/dw-checkbox",
-  "version": "1.0.0-SNAPSHOT",
+  "name": "@dreamworld/dw-checkbox",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {

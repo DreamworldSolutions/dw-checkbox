@@ -46,28 +46,36 @@ export class DwCheckbox extends DwFormElement(LitElement) {
       
       /**
        * A value of this element which is uses at the serialization time when used with `dw-form`.
+       * 
+       * It's an input property in case of multiple choices are to be presented. Put multiple checkboxes with same 
+       * 'name' and different values. e.g. name=fruits, values=['apple', 'banana', 'strawberry', 'orange']
+       * When form is serialized, it will have fruits key set to the Array of string, representing selected/checked 
+       * fruits.
        */
       value: {
         type: String
       },
       
       /**
-       * A string to be shown for checkbox label
+       * Input property. Text to be shown for checkbox label. 
+       * 
+       * It's optional, you may render checkbox without lable as well. 
+       * Checkbox can be checked/unchecked by clicking in the label area as well.
        */
       label: { type: String },
 
       /**
-       * Set to true to show label before checkbox
+       * Set to `true` to show label before checkbox
        */
       alignEnd: { type: Boolean },
       
       /**
-       * Set to true to disabled checkbox
+       * Set to `true` to disable checkbox.
        */
       disabled: { type: Boolean },
 
       /**
-       * Set to true to set the checked status of checkbox
+       * Input as well as output property.
        */
       checked: { type: Boolean },
 
