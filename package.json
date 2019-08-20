@@ -22,7 +22,6 @@
   "homepage": "https://github.com/DreamworldSolutions/dw-checkbox#readme",
   "dependencies": {
     "@dw/dw-form": "^1.0.0-SNAPSHOT",
-    "@dw/dw-form-field": "^1.0.0-SNAPSHOT",
     "@material/mwc-checkbox": "^0.6.0"
   }
 }

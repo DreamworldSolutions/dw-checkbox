@@ -10,10 +10,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 import { LitElement, html, css } from 'lit-element';
 import '@material/mwc-checkbox';
-import '@dw/dw-form-field/dw-form-field';
-import '@dw/dw-form/dw-form-element'
+import '@dw/dw-form/dw-form-field';
 import { DwFormElement } from '@dw/dw-form/dw-form-element';
-
 
 export class DwCheckbox extends DwFormElement(LitElement) {
   static get styles() {
@@ -25,16 +23,12 @@ export class DwCheckbox extends DwFormElement(LitElement) {
           --mdc-theme-on-primary: var(--primary-text-color);
           --mdc-theme-on-secondary: var(--secondary-text-color);
 
-          display: inline-block;
+          display: block;
           outline:none;
         }
 
         :host[hidden] {
           display: none;
-        }
-        
-        dw-form-field{
-          display: inline-block;
         }
       `
     ];
@@ -51,7 +45,7 @@ export class DwCheckbox extends DwFormElement(LitElement) {
       },
       
       /**
-       * A value of this element which is uses at the serialization time.
+       * A value of this element which is uses at the serialization time when used with `dw-form`.
        */
       value: {
         type: String
