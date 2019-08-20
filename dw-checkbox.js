@@ -10,8 +10,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 import { LitElement, html, css } from 'lit-element';
 import '@material/mwc-checkbox';
-import '@dw/dw-form/dw-form-field';
-import { DwFormElement } from '@dw/dw-form/dw-form-element';
+import '@dreamworld/dw-form/dw-form-field';
+import { DwFormElement } from '@dreamworld/dw-form/dw-form-element';
 
 export class DwCheckbox extends DwFormElement(LitElement) {
   static get styles() {

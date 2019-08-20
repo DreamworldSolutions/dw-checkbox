@@ -5,13 +5,13 @@ A material checkbox element made with lit-html. It's an wrapper of [mwc-checkbox
 ## Installation
 
 ``` html
-npm install --save @dw/dw-checkbox
+npm install --save @dreamworld/dw-checkbox
 ```
 
 ## Usage
 
 ``` html
-  import '@dw/dw-checkbox/dw-checkbox';
+  import '@dreamworld/dw-checkbox';
 ```
 
 ## [Demo](https://dreamworldsolutions.github.io/dw-checkbox/demo/index.html)
