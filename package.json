@@ -1,0 +1,27 @@
+{
+  "name": "@dreamworld/dw-checkbox",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/DreamworldSolutions/dw-checkbox.git"
+  },
+  "keywords": [
+    "lit",
+    "checkbox"
+  ],
+  "author": "Ruchita kheni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DreamworldSolutions/dw-checkbox/issues"
+  },
+  "homepage": "https://github.com/DreamworldSolutions/dw-checkbox#readme",
+  "dependencies": {
+    "@dw/dw-form": "0.1.0",
+    "@material/mwc-checkbox": "^0.6.0"
+  }
+}
