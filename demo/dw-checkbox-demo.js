@@ -92,21 +92,21 @@ class DwCheckboxDemo extends LitElement {
       <h4>Indeterminate</h4>
       <section class="table-wrapper">
         <div class="header">
-          <dw-checkbox @checked-change="${this._manageRowItemSelection}" ?indeterminate=${this._isIndeterminate(this._item1Checked, this._item2Checked)} ?checked=${this._isChecked(this._item1Checked, this._item2Checked)}></dw-checkbox>
+          <dw-checkbox @checked-changed="${this._manageRowItemSelection}" ?indeterminate=${this._isIndeterminate(this._item1Checked, this._item2Checked)} ?checked=${this._isChecked(this._item1Checked, this._item2Checked)}></dw-checkbox>
           <span>Dessert</span>
           <span>Fat</span>
           <span>Protein</span>
         </div>
 
         <div>
-          <dw-checkbox ?checked="${this._item1Checked}" name="item1" @checked-change="${this._onItem1CheckedChange}"></dw-checkbox>
+          <dw-checkbox ?checked="${this._item1Checked}" name="item1" @checked-changed="${this._onItem1CheckedChange}"></dw-checkbox>
           <span>Frozen yogurt</span>
           <span>9</span>
           <span>4</span>
         </div>
 
         <div>
-          <dw-checkbox ?checked="${this._item2Checked}" name="item2" @checked-change="${this._onItem2CheckedChange}"></dw-checkbox>
+          <dw-checkbox ?checked="${this._item2Checked}" name="item2" @checked-changed="${this._onItem2CheckedChange}"></dw-checkbox>
           <span>Ice cream sandwich</span>
           <span>3</span>
           <span>4</span>

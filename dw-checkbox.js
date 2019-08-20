@@ -32,6 +32,10 @@ export class DwCheckbox extends DwFormElement(LitElement) {
         :host[hidden] {
           display: none;
         }
+        
+        dw-form-field{
+          display: inline-block;
+        }
       `
     ];
   }
@@ -107,12 +111,12 @@ export class DwCheckbox extends DwFormElement(LitElement) {
   }
 
   /**
-   * Trigger's `checked-change` event
+   * Trigger's `checked-changed` event
    * Sets value of `checked` property
    */
   _onChange(e) { 
     this.checked = e.target.checked;
-    this.dispatchEvent(new Event('checked-change', e));
+    this.dispatchEvent(new Event('checked-changed', e));
   }
   
 }

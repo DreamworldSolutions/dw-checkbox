@@ -32,7 +32,7 @@ It supports below properties:
 
 ## Events
 
-Triggers `checked-change` event on checked status change.
+Triggers `checked-changed` event on checked status change.
 
 ## Features
 
