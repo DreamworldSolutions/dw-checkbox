@@ -55,8 +55,8 @@ class DwCheckboxDemo extends LitElement {
         }
 
         .custom-checkbox{
-          --accent-color: #00BCD4;
-          --primary-text-color: #00BCD4;
+          --mdc-theme-secondary: #00BCD4;
+          --mdc-theme-text-primary-on-background: #00BCD4;
           font-size: 30px;
         }
       `

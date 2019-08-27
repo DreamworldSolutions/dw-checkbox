@@ -21,7 +21,11 @@
   },
   "homepage": "https://github.com/DreamworldSolutions/dw-checkbox#readme",
   "dependencies": {
+<<<<<<< HEAD
     "@dreamworld/dw-form": "0.1.0",
+=======
+    "@dw/dw-form": "^1.0.1-SNAPSHOT",
+>>>>>>> aae66ce... Theme changes
     "@material/mwc-checkbox": "^0.6.0"
   },
   "devDependencies": {
