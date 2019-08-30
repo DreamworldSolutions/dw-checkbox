@@ -1,6 +1,6 @@
 {
   "name": "@dreamworld/dw-checkbox",
-  "version": "1.0.2",
+  "version": "0.0.0-development",
   "description": "",
   "main": "dw-checkbox.js",
   "scripts": {
@@ -23,5 +23,11 @@
   "dependencies": {
     "@dreamworld/dw-form": "0.1.0",
     "@material/mwc-checkbox": "^0.6.0"
+  },
+  "devDependencies": {
+    "semantic-release": "beta"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
