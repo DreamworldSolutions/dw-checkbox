@@ -2,6 +2,7 @@
 
 A material checkbox element made with lit-html. It's an wrapper of [mwc-checkbox](https://github.com/material-components/material-components-web-components/tree/master/packages/checkbox) element. Supports all the features of `mwc-checkbox`.
 
+
 ## Installation
 
 ``` html
