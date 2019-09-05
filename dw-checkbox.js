@@ -18,11 +18,6 @@ export class DwCheckbox extends DwFormElement(LitElement) {
     return [
       css`
         :host {
-          --mdc-theme-primary: var(--primary-color);
-          --mdc-theme-secondary: var(--accent-color);
-          --mdc-theme-on-primary: var(--primary-text-color);
-          --mdc-theme-on-secondary: var(--secondary-text-color);
-
           display: block;
           outline:none;
         }
