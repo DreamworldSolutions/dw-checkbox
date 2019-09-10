@@ -106,6 +106,14 @@ export class DwCheckbox extends DwFormElement(LitElement) {
     this.label = "";
     this.value = "";
   }
+  
+  /**
+   * Toggles current state of the checkbox
+   */
+  toggle(){
+    this.shadowRoot.querySelector('dw-form-field').input.focus();
+    this.shadowRoot.querySelector('dw-form-field').input.click();
+  }
 
   /**
    * Trigger's `checked-changed` event
