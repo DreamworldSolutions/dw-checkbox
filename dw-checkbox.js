@@ -101,10 +101,36 @@ export class DwCheckbox extends DwFormElement(LitElement) {
     super();
     this.disabled = false;
     this.alignEnd = false;
-    this.checked = false;
+    this._checked = false; 
     this.indeterminate = false;
     this.label = "";
     this.value = "";
+  }
+
+  set checked(val){
+    if(val === this._checked){
+      return;
+    }
+    
+    let oldValue = this._checked;
+    this._checked = val;
+    this._dispatchCheckChangedEvent();
+    this.requestUpdate('checked', oldValue);
+  }
+
+  get checked(){
+    return this._checked;
+  }
+
+  /**
+   * dispatch `checked-changed` event.
+   */
+  _dispatchCheckChangedEvent(){
+    if(this.checked == undefined){
+      return;
+    }
+    
+    this.dispatchEvent(new CustomEvent('checked-changed', { detail: { checked: this.checked } } ));
   }
   
   /**
@@ -121,9 +147,7 @@ export class DwCheckbox extends DwFormElement(LitElement) {
    */
   _onChange(e) { 
     this.checked = e.target.checked;
-    this.dispatchEvent(new Event('checked-changed', e));
   }
-  
 }
 
 window.customElements.define('dw-checkbox', DwCheckbox);
