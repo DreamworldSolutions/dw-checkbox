@@ -10,7 +10,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 import { html, css } from 'lit-element';
 import { LitElement } from '@dreamworld/pwa-helpers/lit-element.js';
-import '@material/mwc-checkbox';
+import './dw-checkbox-base.js';
 import '@dreamworld/dw-form/dw-form-field';
 import { DwFormElement } from '@dreamworld/dw-form/dw-form-element';
 
@@ -96,13 +96,13 @@ export class DwCheckbox extends DwFormElement(LitElement) {
     return html`
       <dw-form-field .label="${this.label}" ?alignEnd="${this.alignEnd}" ?disabled="${this.disabled}">
 
-        <mwc-checkbox
+        <dw-checkbox-base
          ?disabled="${this.disabled}"
          ?checked="${this.checked}"
          ?indeterminate="${this.indeterminate}"
          @change="${this._onChange}"
          @click="${(e) => { setTimeout(() => { e.target.blur(); }, 1)}}">
-        </mwc-checkbox>
+        </dw-checkbox-base>
 
       </dw-form-field>
     `;
