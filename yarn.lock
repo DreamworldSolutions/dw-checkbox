@@ -23,17 +23,17 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@dreamworld/dw-form@^2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@dreamworld/dw-form/-/dw-form-2.2.1.tgz#4f5e3f0d27faa95b6b6371977142a96e32c99ef3"
-  integrity sha512-1zNstmC5fSy0MFuFp5RE1luvrcyqZrMNLBIMmNkIQ2lZUCWp4UCv0iwlLbnVtfWLps9dGT/5uNI0Niwg0PkJpQ==
+"@dreamworld/dw-form@^2.3.0-development.2":
+  version "2.3.0-development.2"
+  resolved "https://registry.yarnpkg.com/@dreamworld/dw-form/-/dw-form-2.3.0-development.2.tgz#567eafc010891ef088c50e5f068f143831ec3db5"
+  integrity sha512-dfo6OIGAuhufIelRIMfswZze3QjiH6vJgd/0NzmiHlVJwgus6NqnxBu8C+DcpKbZPn2Hikx47e9kkjAbpR09BA==
   dependencies:
-    "@dreamworld/pwa-helpers" "^1.7.1"
+    "@dreamworld/pwa-helpers" "^1.11.1"
     "@material/mwc-formfield" "^0.20.0"
     lit-element "^2.0.1"
     lodash-es "^4.17.15"
 
-"@dreamworld/pwa-helpers@^1.11.1", "@dreamworld/pwa-helpers@^1.7.1":
+"@dreamworld/pwa-helpers@^1.11.1":
   version "1.11.1"
   resolved "https://registry.yarnpkg.com/@dreamworld/pwa-helpers/-/pwa-helpers-1.11.1.tgz#6ac8d465ff4e41a294c9a83bc9244f6397d7f197"
   integrity sha512-WpXKkTNAiVSao2O+lAhGAku0Ri0ABlMy5sz/EgZNZNlwYCJ+2swgyFdlpijlf9G8RG/L7WzlPzb1dzGWbU1fkQ==
