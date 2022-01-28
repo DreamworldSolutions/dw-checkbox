@@ -78,7 +78,13 @@ export class DwCheckbox extends DwFormElement(LitElement) {
       /**
        * Set to true to set the partial selection of checkbox
        */
-      indeterminate: { type: Boolean}
+      indeterminate: { type: Boolean},
+
+      /**
+       * Input property
+       * When true, the checkbox remove padding for touchscreens and increase density.
+       */
+      reducedTouchTarget: { type: Boolean }
     };
   }
 
@@ -90,6 +96,7 @@ export class DwCheckbox extends DwFormElement(LitElement) {
          ?disabled="${this.disabled}"
          ?checked="${this.checked}"
          ?indeterminate="${this.indeterminate}"
+         ?reducedTouchTarget="${this.reducedTouchTarget}"
          @change="${this._onChange}"
          @click="${(e) => { setTimeout(() => { e.target.blur(); }, 1)}}">
         </mwc-checkbox>
