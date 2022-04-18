@@ -21,6 +21,9 @@ export class DwCheckbox extends DwFormElement(LitElement) {
         :host {
           display: block;
           outline:none;
+
+          --mdc-checkbox-unchecked-color: var(--mdc-theme-text-secondary-on-background);
+          --mdc-checkbox-disabled-color: var(--mdc-theme-text-disabled-on-background);
         }
 
         :host[hidden] {
@@ -100,6 +103,10 @@ export class DwCheckbox extends DwFormElement(LitElement) {
          @change="${this._onChange}"
          @click="${(e) => { setTimeout(() => { e.target.blur(); }, 1)}}">
         </mwc-checkbox>
+
+        <div slot="label">
+          <slot name="label"></slot>
+        </div>
 
       </dw-form-field>
     `;
