@@ -23,7 +23,7 @@
   "dependencies": {
     "@dreamworld/dw-form": "^3.0.1",
     "@dreamworld/pwa-helpers": "^1.10.0",
-    "@material/mwc-checkbox": "^0.26.0",
+    "@material/mwc-checkbox": "^0.26.1",
     "lit-element": "^2.2.1"
   },
   "devDependencies": {
