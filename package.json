@@ -24,7 +24,7 @@
   "dependencies": {
     "@dreamworld/dw-form": "https://github.com/DreamworldSolutions/dw-form.git#feature/upgrade-to-lit",
     "@dreamworld/pwa-helpers": "^1.13.1",
-    "@material/mwc-checkbox": "^0.26.1"
+    "@material/mwc-checkbox": "0.27.0"
   },
   "devDependencies": {
     "@web/dev-server": "^0.1.34",
