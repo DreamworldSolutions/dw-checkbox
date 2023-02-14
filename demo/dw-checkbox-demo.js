@@ -140,4 +140,4 @@ class DwCheckboxDemo extends LitElement {
 
 }
 
-window.customElements.define('dw-checkbox-demo', DwCheckboxDemo);
+customElements.define('dw-checkbox-demo', DwCheckboxDemo);

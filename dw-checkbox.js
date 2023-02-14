@@ -140,4 +140,4 @@ export class DwCheckbox extends DwFormElement(LitElement) {
   
 }
 
-window.customElements.define('dw-checkbox', DwCheckbox);
+customElements.define('dw-checkbox', DwCheckbox);
