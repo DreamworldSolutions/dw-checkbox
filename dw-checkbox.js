@@ -136,6 +136,7 @@ export class DwCheckbox extends DwFormElement(LitElement) {
   _onChange(e) { 
     this.checked = e.target.checked;
     this.dispatchEvent(new Event('checked-changed', e));
+    this.dispatchEvent(new Event('change', e));
   }
   
 }
