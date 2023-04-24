@@ -35,7 +35,8 @@ It supports below properties:
 
 ## Events
 
-Triggers `checked-changed` event on checked status change.
+- `checked-changed`: Dispatched when user updates checked status. It's DEPRECATED now, instead use `change`.
+- `change`: Dispatched when user updates checked status. So, same as [browser default event][browser-event-change]
 
 ## Features
 
@@ -65,3 +66,5 @@ In below example, dwForm.serialize() method's result is `{fruit: ['apple', 'kiwi
     <dw-checkbox name="fruit" value="kiwi" label="Kiwi" checked></dw-checkbox>
   </dw-form>
 ```
+
+[browser-event-change]: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event
