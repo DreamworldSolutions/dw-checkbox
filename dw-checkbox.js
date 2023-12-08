@@ -11,7 +11,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 import { LitElement, html, css } from '@dreamworld/pwa-helpers/lit.js';
 import '@dreamworld/dw-form/dw-form-field';
 import { DwFormElement } from '@dreamworld/dw-form/dw-form-element';
-import './checkbox-button.js';
+import './base-checkbox.js';
 
 export class DwCheckbox extends DwFormElement(LitElement) {
   static get styles() {
@@ -94,14 +94,14 @@ export class DwCheckbox extends DwFormElement(LitElement) {
     return html`
       <dw-form-field .label="${this.label}" ?alignEnd="${this.alignEnd}" ?disabled="${this.disabled}">
 
-        <checkbox-button
+        <base-checkbox
          ?disabled="${this.disabled}"
          ?checked="${this.checked}"
          ?indeterminate="${this.indeterminate}"
          ?reducedTouchTarget="${this.reducedTouchTarget}"
          @change="${this._onChange}"
          @click="${(e) => { setTimeout(() => { e.target.blur(); }, 1)}}">
-        </checkbox-button>
+        </base-checkbox>
 
         <div slot="label">
           <slot name="label"></slot>

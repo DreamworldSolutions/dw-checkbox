@@ -1,7 +1,7 @@
 import { css } from '@dreamworld/pwa-helpers/lit.js';
-import { Checkbox } from "@material/mwc-checkbox";
+import { Checkbox as mwcCheckbox } from "@material/mwc-checkbox";
 
-export class CheckboxButton extends Checkbox {
+export class BaseCheckbox extends mwcCheckbox {
   static get styles() {
     return [
       super.styles,
@@ -14,4 +14,4 @@ export class CheckboxButton extends Checkbox {
   }
 }
 
-customElements.define("checkbox-button", CheckboxButton);
+customElements.define("base-checkbox", BaseCheckbox);
