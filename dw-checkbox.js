@@ -130,6 +130,16 @@ export class DwCheckbox extends DwFormElement(LitElement) {
   }
 
   /**
+   * Sets focus on the checkbox.
+   */
+  focus() {
+    const checkbox = this.shadowRoot.querySelector("base-checkbox");
+    if (checkbox) {
+      checkbox.focus();
+    }
+  }
+
+  /**
    * Trigger's `checked-changed` event
    * Sets value of `checked` property
    */
