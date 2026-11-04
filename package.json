@@ -21,10 +21,10 @@
   },
   "homepage": "https://github.com/DreamworldSolutions/dw-checkbox#readme",
   "dependencies": {
-    "@dreamworld/dw-form": "^3.0.1",
-    "@dreamworld/pwa-helpers": "^1.10.0",
-    "@material/mwc-checkbox": "^0.20.0",
-    "lit-element": "^2.2.1"
+    "@dreamworld/dw-form": "2.3.2-kerika.1",
+    "@dreamworld/pwa-helpers": "^3.0.2",
+    "@material/mwc-checkbox": "0.27.0",
+    "lit": "^3.3.0"
   },
   "devDependencies": {
     "semantic-release": "17.0.8"
